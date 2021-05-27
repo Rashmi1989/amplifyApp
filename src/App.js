@@ -1,7 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+
+import react from 'react';
 
 function App() {
+
+  function geocodeAddress(){
+    alert("hello");
+  }
+
   return (
     <div className="App">
       <header className="App-header">
