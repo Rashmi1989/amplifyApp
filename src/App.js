@@ -5,18 +5,17 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <h1>Enter Address to Geocode</h1>
+        <table cellspacing="10">
+            <tr><td>Address</td><td><input id="street" type="text" width="80"/></td></tr>
+            <tr><td>City</td><td><input id="city" type="text" width="50" /></td></tr>
+            <tr><td>State</td><td><input id="state" type="text" width="10"/></td></tr>
+            <tr><td>Country</td><td><input id="country" type="text" width="10"/></td></tr>
+            <tr><td></td><input type="submit" value="Geocode Address" onclick={geocodeAddress} /> </tr>
+          <tr></tr>
+            <tr><td>Latitude</td><td><input id="latitude" type="text" width="50" /></td></tr>
+            <tr><td>Longitude</td><td><input id="longitude" type="text" width="50" /></td></tr>
+        </table>
       </header>
     </div>
   );
